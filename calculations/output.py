@@ -146,11 +146,11 @@ def animate(frame, cap, sorted_detections, M, im, scatter, a0, a1, PHYSICAL_DIST
     # Clear previous patches. Otherwise it will simply keep plotting over the top of itself.
     del a0.patches[:]
     patch_list = []
-    for counter, i in enumerate(draw_ellipse_requirements):
-        ellipse = patches.Ellipse((i[0], i[1]), i[2]*ELLIPSE_WIDTH_SCALE, i[3]*ELLIPSE_HEIGHT_SCALE,
-                                ec="white", 
-                                fc=colours[int(are_coords_overlapped[counter])], 
-                                alpha=0.3, animated=True)
-        patch_list.append(a0.add_patch(ellipse))
+#     for counter, i in enumerate(draw_ellipse_requirements):
+#         ellipse = patches.Ellipse((i[0], i[1]), i[2]*ELLIPSE_WIDTH_SCALE, i[3]*ELLIPSE_HEIGHT_SCALE,
+#                                 ec="white", 
+#                                 fc=colours[int(are_coords_overlapped[counter])], 
+#                                 alpha=0.3, animated=True)
+#         patch_list.append(a0.add_patch(ellipse))
 
     return scatter, patch_list, im
