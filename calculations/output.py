@@ -126,10 +126,10 @@ def animate(frame, cap, sorted_detections, M, im, scatter, a0, a1, PHYSICAL_DIST
                         are_coords_overlapped)
 
     # Trace results over output frame
-    trace(image,
-        coords,
-        draw_ellipse_requirements,
-        are_coords_overlapped)
+#     trace(image,
+#         coords,
+#         draw_ellipse_requirements,
+#         are_coords_overlapped)
 
     rgb_image = image[..., ::-1]
     im.set_array(rgb_image)
